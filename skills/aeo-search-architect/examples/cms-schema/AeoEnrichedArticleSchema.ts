@@ -54,7 +54,7 @@ export const aeoEnrichedArticleSchema = {
     },
     {
       name: 'dependencies',
-      title: 'Technical Dependencies (e.g. React 19, TypeScript 5.7)',
+      title: 'Technical Dependencies (e.g. React 19, TypeScript 7.0)',
       type: 'string',
       description: 'Informs answer engines of software prerequisite versions.',
     },

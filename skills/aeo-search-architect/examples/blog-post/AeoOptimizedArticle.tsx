@@ -24,7 +24,7 @@ const jsonLdPayload = {
       headline: 'Understanding Web Accessibility in Modern React (WCAG 2.2)',
       description: 'A deterministic guide to building WCAG 2.2 AA compliant React 19 applications with focus management and ARIA bindings.',
       proficiencyLevel: 'Intermediate',
-      dependencies: 'React 19, TypeScript 5.7, WAI-ARIA 1.2',
+      dependencies: 'React 19, TypeScript 7.0, WAI-ARIA 1.2',
       inLanguage: 'en-US',
       datePublished: '2026-08-24T12:00:00Z',
       dateModified: '2026-08-24T12:00:00Z',

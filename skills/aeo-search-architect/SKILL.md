@@ -137,7 +137,7 @@ flowchart TD
 * **Principle**: Standard `Article` lacks technical context. `TechArticle` provides explicit signals for technical depth, software dependencies, and developer proficiency.
 * **Required Properties**:
   * `proficiencyLevel`: `"Beginner"` | `"Intermediate"` | `"Expert"`
-  * `dependencies`: Software or library prerequisites (e.g., `"React 19, TypeScript 5.7"`).
+  * `dependencies`: Software or library prerequisites (e.g., `"React 19, TypeScript 7.0"`).
   * `datePublished` & `dateModified` (ISO 8601 strings).
   * `headline` & `description`.
 

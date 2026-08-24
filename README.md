@@ -1,7 +1,7 @@
 # 🤖 Agent Skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript: 5.7+](https://img.shields.io/badge/TypeScript-5.7+-blue.svg)](https://www.typescriptlang.org/)
+[![TypeScript: 7.0+](https://img.shields.io/badge/TypeScript-7.0+-blue.svg)](https://www.typescriptlang.org/)
 [![React: 19+](https://img.shields.io/badge/React-19-61DAFB.svg)](https://react.dev/)
 
 A collection of custom deterministic agent skills for AI coding assistants (Google Antigravity, Claude Code, Cursor, Codex) designed for building and optimizing modern web applications and digital products.

@@ -41,7 +41,7 @@ An automated, deterministic Answer Engine Optimization (AEO) and Schema.org enti
 +         '@id': 'https://example.com/posts/a11y-guide#article',
 +         'headline': 'Understanding Web Accessibility in Modern React',
 +         'proficiencyLevel': 'Intermediate',
-+         'dependencies': 'React 19, TypeScript 5.7',
++         'dependencies': 'React 19, TypeScript 7.0',
 +         'speakable': {
 +           '@type': 'SpeakableSpecification',
 +           'cssSelector': ['#quick-answer', '.key-takeaways']

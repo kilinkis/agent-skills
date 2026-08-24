@@ -30,7 +30,7 @@ const softwareSchema = {
         ratingCount: '128',
       },
       featureList: [
-        'TypeScript 5.7+ AST Refactoring Engine',
+        'TypeScript 7.0+ AST Refactoring Engine',
         'Headless Next.js App Router Metadata Synchronization',
         'Zero-Latency Local Validation CLI',
       ],

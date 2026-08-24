@@ -53,7 +53,7 @@ Instead of isolated schema objects, combine all entities into a single `@graph` 
       "headline": "AEO Guide: Schema.org for AI Search",
       "description": "How to optimize websites for Perplexity and ChatGPT Search.",
       "proficiencyLevel": "Intermediate",
-      "dependencies": "Next.js 15, React 19, TypeScript 5.7",
+      "dependencies": "Next.js 15, React 19, TypeScript 7.0",
       "datePublished": "2026-08-24T12:00:00Z",
       "dateModified": "2026-08-24T12:00:00Z",
       "author": { "@id": "https://example.com/authors/john-doe#person" },
