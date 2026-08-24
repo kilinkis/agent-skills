@@ -7,6 +7,7 @@
   "scripts": {
     "audit:a11y": "tsx skills/react-a11y-ast-refactorer/scripts/audit-a11y-ast.ts",
     "audit:aeo": "tsx skills/aeo-search-architect/scripts/validate-aeo-schema.ts",
+    "audit:cwv": "tsx skills/cwv-inp-doctor/scripts/audit-cwv-ast.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
