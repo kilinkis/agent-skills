@@ -1,0 +1,37 @@
+{
+  "name": "@kilinkis/agent-skills",
+  "version": "1.0.0",
+  "description": "Production-grade, deterministic agent skills for AI coding assistants (Antigravity, Claude Code, Cursor, Codex)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai-agent-skills",
+    "agentic-ai",
+    "ast-analysis",
+    "wcag-accessibility",
+    "react-a11y",
+    "claude-skills",
+    "cursor-rules"
+  ],
+  "author": "kilinkis",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "globby": "^14.0.2",
+    "ts-morph": "^25.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
