@@ -16,7 +16,7 @@ Rather than relying on fuzzy "vibe prompts", these skills combine **deterministi
 | Skill Name | Domain | Primary Focus | Status |
 | :--- | :--- | :--- | :--- |
 | [**`react-a11y-ast-refactorer`**](./skills/react-a11y-ast-refactorer) | ♿ Accessibility & WCAG 2.2 | In-place TSX AST scanning, focus traps, APG keyboard patterns, and axe-core test generation. | 🟢 Ready |
-| **`aeo-search-architect`** *(Coming Soon)* | 🤖 AEO & Generative Search | Entity schema graphs, direct-answer synthesis, and CMS structured data pipelines for Perplexity & ChatGPT. | ⚪ Planned |
+| [**`aeo-search-architect`**](./skills/aeo-search-architect) | 🤖 AEO & Generative Search | Entity schema graphs, direct-answer synthesis, and CMS structured data pipelines for Perplexity & ChatGPT. | 🟢 Ready |
 | **`cwv-inp-doctor`** *(Coming Soon)* | ⚡ Core Web Vitals | Main-thread blocking de-risking, `startTransition`, CLS layout shift prevention, and LCP preloading. | ⚪ Planned |
 
 ---
@@ -105,6 +105,61 @@ An expert accessibility skill that enables AI agents to parse local React/TypeSc
 
 ---
 
+## ⚡ Flagship Skill: `aeo-search-architect`
+
+An Answer Engine Optimization (AEO) skill that structures React & Next.js pages for **Perplexity, ChatGPT Search, and Google AI Overviews** using connected **Schema.org entity graphs**, **BLUF direct-answer summaries**, and **Speakable specification targeting**.
+
+### 🔍 Before vs. After: Next.js Article AEO Refactoring
+
+```diff
+- // ❌ BEFORE: Unstructured narrative, no Schema.org, answer buried
+- export default function BlogPost() {
+-   return (
+-     <div>
+-       <h1>Understanding Web Accessibility</h1>
+-       <p>In today's fast-paced digital world, web development is evolving...</p>
+-     </div>
+-   );
+- }
+
++ // ✅ AFTER: Connected @graph JSON-LD, BLUF direct answer block & Speakable targeting
++ export default function BlogPost() {
++   const jsonLd = {
++     '@context': 'https://schema.org',
++     '@graph': [
++       {
++         '@type': 'TechArticle',
++         '@id': 'https://example.com/posts/a11y#article',
++         'headline': 'Understanding Web Accessibility in Modern React',
++         'proficiencyLevel': 'Intermediate',
++         'dependencies': 'React 19, TypeScript 5.7',
++         'speakable': {
++           '@type': 'SpeakableSpecification',
++           'cssSelector': ['#quick-answer', '.key-takeaways']
++         }
++       }
++     ]
++   };
++
++   return (
++     <article className="max-w-4xl mx-auto p-6" aria-labelledby="title">
++       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
++       <header>
++         <h1 id="title" className="text-3xl font-bold">Understanding Web Accessibility in Modern React</h1>
++         <div id="quick-answer" role="region" aria-label="Key Takeaways" className="mt-4 p-4 bg-blue-50 rounded-xl">
++           <p className="font-semibold text-blue-900">⚡ Direct Answer / Key Takeaways:</p>
++           <ul className="list-disc pl-5 text-sm">
++             <li><strong>Target Size:</strong> WCAG 2.2 SC 2.5.8 requires 24×24 CSS px.</li>
++           </ul>
++         </div>
++       </header>
++     </article>
++   );
++ }
+```
+
+---
+
 ## 🛠️ How to Install Skills
 
 ### For Google Antigravity & Codex
@@ -112,25 +167,28 @@ Copy the desired skill directory into your user or project skills folder:
 ```bash
 # Global installation:
 cp -r skills/react-a11y-ast-refactorer ~/.gemini/config/skills/
+cp -r skills/aeo-search-architect ~/.gemini/config/skills/
 
 # Or local project installation:
 cp -r skills/react-a11y-ast-refactorer .gemini/skills/
+cp -r skills/aeo-search-architect .gemini/skills/
 ```
 
 ### For Claude Code
 ```bash
 # Copy into your Claude Code skills directory:
 cp -r skills/react-a11y-ast-refactorer ~/.claude/skills/
+cp -r skills/aeo-search-architect ~/.claude/skills/
 ```
 
 ### For Cursor
-Add the rules from `SKILL.md` directly into your `.cursorrules` or `.cursor/rules/a11y.mdc`.
+Add the rules from `SKILL.md` directly into your `.cursorrules` or `.cursor/rules/`.
 
 ---
 
-## 🧪 Running the Local Deterministic AST Scanner
+## 🧪 Running the Local Deterministic AST & AEO Scanners
 
-You can execute the standalone AST auditor against any directory in your codebase:
+You can execute the standalone AST and AEO auditors against any directory in your codebase:
 
 ```bash
 # Install dependencies:
@@ -138,6 +196,9 @@ pnpm install
 
 # Run the AST accessibility scanner:
 pnpm audit:a11y --path src/components/
+
+# Run the AEO Schema & Information Gain validator:
+pnpm audit:aeo --path src/app/
 ```
 
 ---

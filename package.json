@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "audit:a11y": "tsx skills/react-a11y-ast-refactorer/scripts/audit-a11y-ast.ts",
+    "audit:aeo": "tsx skills/aeo-search-architect/scripts/validate-aeo-schema.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
