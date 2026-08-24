@@ -12,11 +12,11 @@ Instead of relying on fuzzy prompts, these skills combine **deterministic AST an
 
 ## 📚 Skill Catalog
 
-| Skill Name | Domain | Focus | Status |
+| Skill Name | Domain | Focus |
 | :--- | :--- | :--- | :--- |
-| [**`react-a11y-ast-refactorer`**](./skills/react-a11y-ast-refactorer) | ♿ Accessibility | WCAG 2.2 AA/AAA compliance, focus traps, and APG keyboard patterns | 🟢 Ready |
-| [**`aeo-search-architect`**](./skills/aeo-search-architect) | 🤖 Generative Search & AEO | Schema.org entity graphs, BLUF direct-answer summaries, and citation hooks | 🟢 Ready |
-| [**`cwv-inp-doctor`**](./skills/cwv-inp-doctor) | ⚡ Performance & CWV | INP optimization, React 19 concurrency, CLS elimination, and LCP preloading | 🟢 Ready |
+| [**`react-a11y-ast-refactorer`**](./skills/react-a11y-ast-refactorer) | ♿ Accessibility | WCAG 2.2 AA/AAA compliance, focus traps, and APG keyboard patterns |
+| [**`aeo-search-architect`**](./skills/aeo-search-architect) | 🤖 Generative Search & AEO | Schema.org entity graphs, BLUF direct-answer summaries, and citation hooks |
+| [**`cwv-inp-doctor`**](./skills/cwv-inp-doctor) | ⚡ Performance & CWV | INP optimization, React 19 concurrency, CLS elimination, and LCP preloading |
 
 ---
 
