@@ -4,9 +4,9 @@
 [![TypeScript: 7.0+](https://img.shields.io/badge/TypeScript-7.0+-blue.svg)](https://www.typescriptlang.org/)
 [![React: 19+](https://img.shields.io/badge/React-19-61DAFB.svg)](https://react.dev/)
 
-A collection of custom deterministic agent skills for AI coding assistants (Google Antigravity, Claude Code, Cursor, Codex) designed for building and optimizing modern web applications and digital products.
+A collection of custom agent skills for AI coding assistants (Google Antigravity, Claude Code, Cursor, Codex) designed for building and optimizing modern web applications and digital products.
 
-Instead of relying on fuzzy prompts, these skills combine **deterministic AST analysis (`ts-morph`)**, **automated verification hooks**, and **authoritative domain references**.
+Instead of relying on generic prompts, each skill packages focused workflows and domain guidance. Where objective checks add value, skills also include **deterministic AST analysis (`ts-morph`)** and **automated verification hooks**.
 
 ---
 
@@ -17,6 +17,7 @@ Instead of relying on fuzzy prompts, these skills combine **deterministic AST an
 | [**`react-a11y-ast-refactorer`**](./skills/react-a11y-ast-refactorer) | ♿ Accessibility | WCAG 2.2 AA/AAA compliance, focus traps, and APG keyboard patterns |
 | [**`aeo-search-architect`**](./skills/aeo-search-architect) | 🤖 Generative Search & AEO | Schema.org entity graphs, BLUF direct-answer summaries, and citation hooks |
 | [**`cwv-inp-doctor`**](./skills/cwv-inp-doctor) | ⚡ Performance & CWV | INP optimization, React 19 concurrency, CLS elimination, and LCP preloading |
+| [**`playful-web-animations`**](./skills/playful-web-animations) | ✨ Web Animation | Purposeful motion, tasteful UI animation audits, playfulness, reduced motion, and interruption-safe implementation |
 
 ---
 
@@ -36,6 +37,11 @@ Instead of relying on fuzzy prompts, these skills combine **deterministic AST an
   * De-risks main-thread blocking by applying React 19 concurrency (`startTransition`, `useDeferredValue`).
   * Eliminates Cumulative Layout Shift (CLS) by enforcing explicit media dimensions and aspect ratios.
   * Optimizes Largest Contentful Paint (LCP) with priority hints (`fetchPriority="high"`) and eager loading.
+
+* ✨ **[`playful-web-animations`](./skills/playful-web-animations)**
+  * Classifies motion as tangible, informative, attention-focusing, or joyful before implementation.
+  * Keeps animation in mind while building new interfaces and identifies restrained motion opportunities in existing projects.
+  * Verifies rapid reversal, reduced-motion behavior, accessibility, cleanup, and rendering performance.
 
 ---
 

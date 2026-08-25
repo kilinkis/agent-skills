@@ -1,7 +1,7 @@
 {
   "name": "@kilinkis/agent-skills",
   "version": "1.0.0",
-  "description": "Production-grade, deterministic agent skills for AI coding assistants (Antigravity, Claude Code, Cursor, Codex)",
+  "description": "Production-grade agent skills for AI coding assistants (Antigravity, Claude Code, Cursor, Codex)",
   "private": true,
   "type": "module",
   "scripts": {
