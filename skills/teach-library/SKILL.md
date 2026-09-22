@@ -1,9 +1,13 @@
 ---
-name: teach
-description: Teach the user a new skill or concept, within this workspace.
+name: teach-library
+description: Teach a concept through a stateful HTML course and publish finished lessons to a configured personal library. Use when the user wants the lesson archived and deployed; use generic Teach for local-only learning.
 disable-model-invocation: true
-argument-hint: "What would you like to learn about?"
+argument-hint: "What would you like to learn and publish?"
 ---
+
+## Attribution
+
+This is a personal publishing fork of the original Teach skill by [Matt Pocock](https://github.com/mattpocock). It retains the teaching model and adds lesson-library publishing, navigation, duration, external-link conventions, and browser-local retrieval practice.
 
 The user has asked you to teach them something. This is a stateful request - they intend to learn the topic over multiple sessions.
 
