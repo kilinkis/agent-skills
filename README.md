@@ -18,6 +18,7 @@ Instead of relying on generic prompts, each skill packages focused workflows and
 | [**`aeo-search-architect`**](./skills/aeo-search-architect) | 🤖 Generative Search & AEO | Schema.org entity graphs, BLUF direct-answer summaries, and citation hooks |
 | [**`cwv-inp-doctor`**](./skills/cwv-inp-doctor) | ⚡ Performance & CWV | INP optimization, React 19 concurrency, CLS elimination, and LCP preloading |
 | [**`playful-web-animations`**](./skills/playful-web-animations) | ✨ Web Animation | Purposeful motion, tasteful UI animation audits, playfulness, reduced motion, and interruption-safe implementation |
+| [**teach-library**](./skills/teach-library) | 📚 Learning | Stateful HTML courses with personal-library publishing, navigation, and lesson metadata |
 
 ---
 

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Teach Library"
+  short_description: "Create and publish a guided HTML course"
+policy:
+  allow_implicit_invocation: false
