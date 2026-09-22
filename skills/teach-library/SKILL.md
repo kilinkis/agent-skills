@@ -177,6 +177,6 @@ Every published lesson should support a quick retrieval-practice step. Keep it s
 
 The Teach library publisher adds the shared practice controls, browser-local scheduling, and a Review due page. Practice is intentionally anonymous: ratings are stored only in the current browser's local storage and never require a login, cookie, server, or secret.
 
-When writing a lesson, give its major sections clear, specific headings and lead each with a concise explanatory paragraph. The publisher derives a small set of fallback recall prompts from these sections for the library. Do not store learner progress in the lesson files or repository. Rate labels mean: Again returns in about 10 minutes; Hard, Good, and Easy space the next review progressively farther out.
+When writing a lesson, give its major sections clear, specific headings and lead each with a concise explanatory paragraph. The publisher may derive section-specific recall prompts from these sections, but must never publish a generic title-summary fallback. Prefer explicit retrieval drills with a concrete question and answer whenever the lesson supports them. Do not store learner progress in the lesson files or repository. Rate labels mean: Again returns in about 10 minutes; Hard, Good, and Easy space the next review progressively farther out.
 
 The published library uses `noindex, nofollow` metadata. It is public by URL but should not be presented as publicly searchable material.
