@@ -1,13 +1,9 @@
 ---
-name: teach-library
-description: Teach a concept through a stateful HTML course and publish finished lessons to a configured personal library. Use when the user wants the lesson archived and deployed; use generic Teach for local-only learning.
+name: teach
+description: Teach the user a new skill or concept, within this workspace.
 disable-model-invocation: true
-argument-hint: "What would you like to learn and publish?"
+argument-hint: "What would you like to learn about?"
 ---
-
-## Attribution
-
-This is a personal publishing fork of the original Teach skill by [Matt Pocock](https://github.com/mattpocock). It retains the teaching model and adds lesson-library publishing, navigation, duration, and external-link conventions.
 
 The user has asked you to teach them something. This is a stateful request - they intend to learn the topic over multiple sessions.
 
@@ -170,3 +166,13 @@ The Teach publishing helper automatically normalizes external links and rebuilds
 ## Estimated completion time
 
 Every lesson must state an estimated completion time directly beneath its main title, including reading and interactive exercises. Use a realistic whole-minute estimate, normally 5 to 30 minutes. The publisher fills in a conservative estimate only for older lessons that lack one.
+
+## Retrieval practice and local review
+
+Every published lesson should support a quick retrieval-practice step. Keep it short: target 3 to 5 focused prompts that test a concept, decision, trade-off, or concrete scenario from that lesson. Prefer recall and explanation over recognition-only questions; use shuffled multiple choice only when it is genuinely diagnostic.
+
+The Teach library publisher adds the shared practice controls, browser-local scheduling, and a Review due page. Practice is intentionally anonymous: ratings are stored only in the current browser's local storage and never require a login, cookie, server, or secret.
+
+When writing a lesson, give its major sections clear, specific headings and lead each with a concise explanatory paragraph. The publisher derives a small set of fallback recall prompts from these sections for the library. Do not store learner progress in the lesson files or repository. Rate labels mean: Again returns in about 10 minutes; Hard, Good, and Easy space the next review progressively farther out.
+
+The published library uses `noindex, nofollow` metadata. It is public by URL but should not be presented as publicly searchable material.
