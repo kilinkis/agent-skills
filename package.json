@@ -23,7 +23,7 @@
   "author": "kilinkis",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^5.3.0",
+    "chalk": "^6.0.0",
     "globby": "^14.0.2",
     "ts-morph": "^25.0.1"
   },
