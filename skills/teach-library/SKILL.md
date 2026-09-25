@@ -64,6 +64,22 @@ Each lesson should recommend a primary source for the user to read or watch. Thi
 
 Each lesson should contain a reminder to ask followup questions to the agent. The agent is their teacher, and can assist with anything that's unclear.
 
+
+## Plain-language teaching standard
+
+Teach as a patient instructor, not as a colleague trading shorthand. The learner should not need prior familiarity with the vocabulary to follow the first read.
+
+- Start each lesson with a short **In plain English** explanation: the user-visible problem, the core idea, and why it matters.
+- Introduce jargon only after the everyday idea it names. Define an acronym at first use and connect it to something the learner can observe or measure.
+- Use complete sentences to explain causal links. Do not replace an explanation with a slogan, a list of nouns, or a compressed equation.
+- Give one idea per paragraph. When several stages form a process, walk through them in order and say what happens at each stage.
+- Tables must state the relationship they represent. Keep each column at one level of abstraction; for diagnostic tables, use **what you observe → what it means → what to check next**. Add a sentence before or after the table explaining how to read it.
+- Use a concrete example before a compact summary. Compression belongs in a reference guide, after the lesson has made the concept understandable.
+- Prefer direct words over performative senior-engineer phrasing. A memorable title is fine, but it cannot be the only explanation.
+- Write for a capable non-native English reader. Prefer common, concrete words and short sentences: use “use”, “show”, “start”, “end”, and “check” instead of abstract alternatives.
+- Keep technical terms only when they name something the learner needs to know. Explain each one in plain words the first time it appears; do not stack unexplained terms in a sentence.
+- Avoid insider words such as “falsifiable”, “cohort”, “segment”, “artifact”, “mechanism”, and “trade-off” unless a lesson is specifically teaching that word.
+
 ## Assets
 
 Lessons are built from reusable **components**, stored in `./assets/`: stylesheets, quiz widgets, simulators, diagram helpers, and anything else a second lesson could reuse.
