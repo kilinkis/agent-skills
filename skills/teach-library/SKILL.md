@@ -177,6 +177,24 @@ Every published lesson should support a quick retrieval-practice step. Keep it s
 
 The Teach library publisher adds the shared practice controls, browser-local scheduling, and a Review due page. Practice is intentionally anonymous: ratings are stored only in the current browser's local storage and never require a login, cookie, server, or secret.
 
-When writing a lesson, give its major sections clear, specific headings and lead each with a concise explanatory paragraph. The publisher may derive section-specific recall prompts from these sections, but must never publish a generic title-summary fallback. Prefer explicit retrieval drills with a concrete question and answer whenever the lesson supports them. Do not store learner progress in the lesson files or repository. Rate labels mean: Again returns in about 10 minutes; Hard, Good, and Easy space the next review progressively farther out.
+The publisher does not derive questions from headings. Each published lesson must provide explicit practice cards with a precise prompt and answer. Do not store learner progress in the lesson files or repository. Rate labels mean: Again returns in about 10 minutes; Hard, Good, and Easy space the next review progressively farther out.
 
 The published library uses `noindex, nofollow` metadata. It is public by URL but should not be presented as publicly searchable material.
+
+### Author practice cards
+
+Embed a JSON array in each lesson before publication:
+
+```html
+<script type="application/json" data-teach-practice>
+[
+  {
+    "id": "stable-card-slug",
+    "prompt": "What decision should be made first when ...?",
+    "answer": "Start by ... because ..."
+  }
+]
+</script>
+```
+
+Provide 1–5 cards. Every `prompt` must be a genuine, unambiguous question ending in `?`, and every answer must directly answer it. Test a concrete distinction, decision, mechanism, trade-off, or scenario—never a heading, a vague “explain this” instruction, or a request to summarize the lesson. Keep `id` stable when revising a card so its review history remains intact. The publisher renders only these authored cards; if a lesson has none, it receives no practice section.
