@@ -44,6 +44,11 @@ Instead of relying on generic prompts, each skill packages focused workflows and
   * Keeps animation in mind while building new interfaces and identifies restrained motion opportunities in existing projects.
   * Verifies rapid reversal, reduced-motion behavior, accessibility, cleanup, and rendering performance.
 
+* 📚 **[`teach-library`](./skills/teach-library)**
+  * Creates stateful HTML courses and publishes finished lessons to a personal library.
+  * Adds explicit retrieval-practice questions, browser-local spaced review, lesson navigation, and duration metadata.
+  * Keeps external resources in new tabs and supports a public, noindex learning site.
+
 ---
 
 ## 🛠️ How to Install Skills
