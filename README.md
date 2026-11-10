@@ -19,6 +19,7 @@ Instead of relying on generic prompts, each skill packages focused workflows and
 | [**`cwv-inp-doctor`**](./skills/cwv-inp-doctor) | ⚡ Performance & CWV | INP optimization, React 19 concurrency, CLS elimination, and LCP preloading |
 | [**`playful-web-animations`**](./skills/playful-web-animations) | ✨ Web Animation | Purposeful motion, tasteful UI animation audits, playfulness, reduced motion, and interruption-safe implementation |
 | [**teach-library**](./skills/teach-library) | 📚 Learning | Stateful HTML courses with personal-library publishing, navigation, and lesson metadata |
+| [**`github-readme-crafter`**](./skills/github-readme-crafter) | 📝 Repository Documentation | Visual README storytelling, live demos, Mermaid diagrams, screenshots, tables, and polished Markdown |
 
 ---
 
@@ -48,6 +49,11 @@ Instead of relying on generic prompts, each skill packages focused workflows and
   * Creates stateful HTML courses and publishes finished lessons to a personal library.
   * Adds explicit retrieval-practice questions, browser-local spaced review, lesson navigation, and duration metadata.
   * Keeps external resources in new tabs and supports a public, noindex learning site.
+
+* 📝 **[`github-readme-crafter`](./skills/github-readme-crafter)**
+  * Creates memorable GitHub READMEs with logos, screenshots, badges, Mermaid diagrams, tables, and math notation when relevant.
+  * Highlights real live demos and provides accurate, copyable quick-start instructions grounded in the repository.
+  * Checks links, asset paths, and Markdown formatting, and avoids em dashes.
 
 ---
 
